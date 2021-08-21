@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <title>Bubble Burst</title>
+</head>
+
+<body>
+    <div class="background" id="bubbles-container">
+        <div id="score-box">
+            <span>Score:</span><span id="score">0</span>
+        </div>
+        <div id="timer-box">
+            <span>Time: </span><span id="timer">60</span><span> sec</span>
+        </div>
+    </div>
+    <div class="background flex-centered" id="game-over">
+        <div class="model flex -centered" id="game-over-model">
+            <h2>Game Over</h2>
+            <p>You Have scored <span id="final-score">0</span>points . Play agian and pop more bubbles.</p>
+            <div class="button instruction-button" id="play-again">Play Again</div>
+        </div>
+    </div>
+    <audio id="play" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+    <script src="./game.js"></script>
+</body>
+
+</html>

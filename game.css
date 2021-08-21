@@ -1,0 +1,34 @@
+#score-box, #timer-box{
+    font-size: 3em;
+    padding: 20px;z-index: 1;
+}
+#game-over{
+    display: none;
+}
+#final-score{
+    font-size: 3em;
+}
+.bubble{
+    position:absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    animation: flying 5s infinite ease-in;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+@keyframes flying {
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
